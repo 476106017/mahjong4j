@@ -24,6 +24,6 @@ public class HouteiResolver extends SituationResolver implements NormalYakuResol
         if (isSituationsNull()) {
             return false;
         }
-        return generalSituation.isHoutei() && !personalSituation.isTsumo();
+        return generalSituation.isLastRound() && !personalSituation.isTsumo();
     }
 }

@@ -9,14 +9,14 @@ import java.util.List;
  */
 public class GeneralSituation {
     private boolean isFirstRound;
-    private boolean isHoutei;
+    private boolean isLastRound;
     private Tile bakaze;
     private List<Tile> dora;
     private List<Tile> uradora;
 
-    public GeneralSituation(boolean isFirstRound, boolean isHoutei, Tile bakaze, List<Tile> dora, List<Tile> uradora) {
+    public GeneralSituation(boolean isFirstRound, boolean isLastRound, Tile bakaze, List<Tile> dora, List<Tile> uradora) {
         this.isFirstRound = isFirstRound;
-        this.isHoutei = isHoutei;
+        this.isLastRound = isLastRound;
         this.bakaze = bakaze;
         this.dora = dora;
         this.uradora = uradora;
@@ -34,12 +34,12 @@ public class GeneralSituation {
         isFirstRound = firstRound;
     }
 
-    public boolean isHoutei() {
-        return isHoutei;
+    public boolean isLastRound() {
+        return isLastRound;
     }
 
-    public void setHoutei(boolean houtei) {
-        isHoutei = houtei;
+    public void setLastRound(boolean LastRound) {
+        isLastRound = LastRound;
     }
 
     public Tile getBakaze() {

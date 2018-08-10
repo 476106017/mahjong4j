@@ -25,6 +25,6 @@ public class HaiteiResolver extends SituationResolver implements NormalYakuResol
             return false;
         }
 
-        return generalSituation.isHoutei() && personalSituation.isTsumo();
+        return generalSituation.isLastRound() && personalSituation.isTsumo();
     }
 }
