@@ -41,7 +41,7 @@ public class MahjongBoard {
     }
 
     public void nextTurn(){
-        turn = tu
+        turn = (turn+1)%4;
     }
 
     private Tile draw(){

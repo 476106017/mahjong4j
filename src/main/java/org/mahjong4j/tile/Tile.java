@@ -1,5 +1,8 @@
 package org.mahjong4j.tile;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.mahjong4j.tile.TileType.*;
 
 /**
@@ -57,6 +60,16 @@ public enum Tile {
 
     public static Tile valueOf(int c) {
         return Tile.values()[c];
+    }
+
+    public static List<Tile> toList(int[] tiles){
+        List tileList = new ArrayList();
+        for (int i = 0; i < tiles.length; i++) {
+            for (int j = 0; j < tiles[i]; j++) {
+                tileList.add(Tile.valueOf(i));
+            }
+        }
+        return tileList;
     }
 
     public int getCode() {
